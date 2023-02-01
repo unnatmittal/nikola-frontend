@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Outlet, Link } from "react-router-dom";
 
-import "./style.css";
+import "./lstyle.css";
 
 const Signup = () => {
   const [inputs, setInputs] = useState({

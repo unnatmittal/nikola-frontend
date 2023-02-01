@@ -12,6 +12,7 @@ body{
   overflow: hidden;
   background-color: #F4F5F5;
 }
+
 .center{
   position: absolute;
   top: 50%;
@@ -141,87 +142,3 @@ form .txt_field{
 
 
 /* Other pages */
-
-
-
-.page{
-  width: auto;
-  display: block;
-  /* background-color: #666666;   */
-  margin: 5vh auto;
-}
-.page h1{
-  text-align: center;
-  font-size: 60px;
-  margin: 5vh auto;
-}
-
-.container{
-  display: flex;
-  justify-content:center;
-  /* background-color: #2691d9; */
-  margin: 5vh auto;
-}
-.sel{
-  /* background-color: aqua; */
-}
-.sel label{
-  font-size: 18px;
-  font-weight: 600;
-}
-.sel select{
-  width: 45%;
-  height: 40px;
-  border: 2px solid #adadad;
-  border-radius: 20px;
-  padding: 0 10px;
-  font-size: 16px;
-}
-
-.variable-box{
-  text-align: center;
-  padding: 3vh 0;
-  margin: auto 2vw;
-  background-color: #FFFFFF;
-  border: 1px solid silver;
-  width: 20vw;
-  height: 20vh;
-}
-.variable-box p{
-  margin: 10px;
-  font-size: 18px;
-  /* background-color: beige; */
-}
-.bcls{
-  margin: 10vh auto;
-  display: flex;
-  justify-content: center;
-}
-.fbutton{
-  width: 15%;
-  height: 40px;
-  background: #2691d9;
-  color: #e9f4fb;
-  border: 1px solid;
-  border-radius: 20px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  margin: auto 5vw;
-}
-.black{
-  text-decoration: none;
-  color: #e9f4fb;
-}
-
-.cell{
-  margin: 0px 2vw;
-}
-.r{
-  color: red;
-  text-decoration: none;
-}
-.g{
-  color: green;
-  text-decoration: none;
-}

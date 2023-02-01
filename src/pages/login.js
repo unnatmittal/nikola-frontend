@@ -3,7 +3,7 @@ import Axios from "axios";
 import { Outlet, Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../authContext";
 
-import "./style.css";
+import "./lstyle.css";
 // import { Indexdash } from "./indexdash";
 
 const Login = () => {

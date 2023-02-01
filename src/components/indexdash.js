@@ -11,7 +11,7 @@ export const Indexdash = () => {
   const [vdata, setVdata] = useState([{}]);
 
   const getData = () => {
-    Axios.post("http://localhost:8000/api/dash/", {
+    Axios.post("http://54.95.196.89:8000/api/dash/", {
       vid: vid,
     }).then((response) => {
       setVdata(response.data);

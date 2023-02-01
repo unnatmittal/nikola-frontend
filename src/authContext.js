@@ -10,11 +10,11 @@ export const AuthContextProvider = ({ children }) => {
 
   const login = async (inputs) => {
     const res = await axios.post(
-      "http://localhost:8000/api/auth/login",
-      inputs,
-      {
-        withCredentials: true,
-      }
+      "http://54.95.196.89:8000/api/auth/login",
+      inputs
+      // {
+      //   withCredentials: true,
+      // }
     );
 
     setCurrentUser(res.data);

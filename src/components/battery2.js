@@ -14,7 +14,7 @@ export const Battery2 = () => {
   // const [vid, setVid] = useState(0);
   const [bdata, setBdata] = useState([{}]);
   const getBattery = () => {
-    Axios.post("http://localhost:8000/api/dash/battery", {
+    Axios.post("http://54.95.196.89:8000/api/dash/battery", {
       battid: battid,
     }).then((response) => {
       setBdata(response.data);

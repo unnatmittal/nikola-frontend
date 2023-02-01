@@ -33,7 +33,7 @@ const Signup = () => {
   const register = async (e) => {
     try {
       await axios
-        .post("http://localhost:8000/api/auth/register", inputs)
+        .post("http://54.95.196.89:8000/api/auth/register", inputs)
         .then(() => {
           if (!err) {
             alert("Registered Successfully");

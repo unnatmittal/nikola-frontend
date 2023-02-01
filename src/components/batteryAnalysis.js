@@ -20,15 +20,15 @@ export const BatteryAnalysis = () => {
         <div className="container">
           <div className="variable-box">
             <h2>State</h2>
-            <p>{data.state}</p>
+            <p>{data.State}</p>
           </div>
           <div className="variable-box">
             <h2>Region</h2>
-            <p>{data.region}</p>
+            <p>{data.Region}</p>
           </div>
           <div className="variable-box">
             <h2>Vehicle ID</h2>
-            <p>{data.vid}</p>
+            <p>{data.Vehicle_ID}</p>
           </div>
         </div>
         <div className="container">
@@ -36,7 +36,7 @@ export const BatteryAnalysis = () => {
             <Link
               className="black"
               to="/battery2"
-              state={{ batteryid: data.bmsid }}
+              state={{ batteryid: data.Batt_ID }}
             >
               Battery ID
             </Link>

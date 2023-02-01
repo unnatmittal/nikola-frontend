@@ -9,18 +9,19 @@ import Navbar from "./navbar";
 export const Battery2 = () => {
   const loc = useLocation();
   console.log(loc.state.batteryid);
-  const bmsid = loc.state.batteryid;
+  const battid = loc.state.batteryid;
 
   // const [vid, setVid] = useState(0);
   const [bdata, setBdata] = useState([{}]);
   const getBattery = () => {
-    Axios.post("http://localhost:3002/batterycells", {
-      bmsid: bmsid,
+    Axios.post("http://localhost:8000/api/dash/battery", {
+      battid: battid,
     }).then((response) => {
-      console.log(response.data);
       setBdata(response.data);
+      console.log(response.data);
     });
   };
+  console.log(bdata);
   return (
     <div className="page">
       <Sidebar />
@@ -29,7 +30,7 @@ export const Battery2 = () => {
         <div className="container">
           <div className="sel">
             <h2>BMS ID</h2>
-            <p>{bmsid}</p>
+            <p>{battid}</p>
           </div>
 
           <button className="fbutton" onClick={getBattery}>
@@ -40,41 +41,41 @@ export const Battery2 = () => {
         <div className="container">
           <div className="variable-box">
             <h2>Battery Capacity</h2>
-            <p>{bdata[0].capacity}</p>
+            <p>{bdata[0].Batt_cap}</p>
           </div>
           <div className="variable-box">
             <h2>Battery Voltage</h2>
-            <p>{bdata[0].voltage}</p>
+            <p>{bdata[0].Batt_Volt}</p>
           </div>
           <div className="variable-box">
             <h2>Battery Current</h2>
-            <p>{bdata[0].current}</p>
+            <p>{bdata[0].Batt_Cur}</p>
           </div>
           <div className="variable-box">
             <h2>Battery Temperature</h2>
-            <p>{bdata[0].temp}</p>
+            <p>{bdata[0].Batt_temp}</p>
           </div>
         </div>
         <div className="container">
           <div className="variable-box">
             <h2>Battery SOC</h2>
-            <p>{bdata[0].soc}</p>
+            <p>{bdata[0].Batt_SOC}</p>
           </div>
           <div className="variable-box">
             <h2>Battery SOH</h2>
-            <p>{bdata[0].soh}</p>
+            <p>{bdata[0].Batt_SOH}</p>
           </div>
           <div className="variable-box">
             <h2>Cycle Life</h2>
-            <p>{bdata[0].cyclelife}</p>
+            <p>{bdata[0].Cycle_Life}</p>
           </div>
           <div className="variable-box">
             <h2>Calender Life</h2>
-            <p>{bdata[0].calenderlife}</p>
+            <p>{bdata[0].Calend_Life}</p>
           </div>
           <div className="variable-box">
             <h2>Depth of Degradation</h2>
-            <p>{bdata[0].depthdegradation}</p>
+            <p>{bdata[0].DOD}</p>
           </div>
         </div>
         <div className="container">

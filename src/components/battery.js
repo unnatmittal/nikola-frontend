@@ -7,6 +7,7 @@ import Navbar from "./navbar";
 
 export const Battery = () => {
   const loc = useLocation();
+  console.log(loc);
   console.log(loc.state.batteryid);
   const bmsid = loc.state.batteryid;
 
@@ -14,7 +15,7 @@ export const Battery = () => {
   const [bdata, setBdata] = useState([{}]);
 
   const getBattery = () => {
-    Axios.post("http://localhost:8000/battery", {
+    Axios.post("http://localhost:8000/api/dash/bms", {
       bmsid: bmsid,
     }).then((response) => {
       console.log(response.data);

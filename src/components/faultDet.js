@@ -37,7 +37,7 @@ export const FaultDetection = () => {
             <Link
               className="black"
               to="/battery"
-              state={{ batteryid: data.bmsid }}
+              state={{ batteryid: data.Batt_ID }}
             >
               Battery ID
             </Link>

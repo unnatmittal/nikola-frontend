@@ -37,9 +37,9 @@ export const Indexdash = () => {
               <option defaultValue="Select">Select</option>
               <option>V123456789</option>
               <option>V987654321</option>
-              <option>EV_2W_104</option>
+              {/* <option>EV_2W_104</option>
               <option>EV_2W_105</option>
-              <option>EV_2W_106</option>
+              <option>EV_2W_106</option> */}
             </select>
           </div>
 
